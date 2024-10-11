@@ -84,4 +84,111 @@ footer {
     .activity {
         width: 100%;
     }
+}body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333333;
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+}
+
+header {
+    background-color: #212529;
+    color: #ffffff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1.5rem; /* Añade espacio entre los enlaces */
+}
+
+nav ul li {
+    margin: 0; /* Elimina el margen adicional */
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ff6b6b;
+}
+
+main {
+    padding: 3rem;
+    margin-bottom: 2rem; /* Añade espacio debajo del contenido */
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #ff6b6b;
+    border-bottom: 2px solid #ff6b6b;
+    padding-bottom: 0.5rem;
+}
+
+.activities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    max-width: 100%; /* Asegura que las actividades no desborden el contenedor */
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+}
+
+.activity {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 1.5rem);
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.activity:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.activity h3 {
+    color: #ff6b6b;
+    margin-top: 0;
+}
+
+footer {
+    background-color: #212529;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem; /* Añade espacio superior al pie de página */
+    width: 100%;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .activity {
+        width: 100%; /* Asegura que las actividades ocupen el 100% en pantallas pequeñas */
+    }
 }
