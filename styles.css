@@ -4,7 +4,6 @@ body {
     background: linear-gradient(to bottom right, #f7fafc, #e2e8f0);
     color: #4a5568;
 }
-
 .container {
     min-height: 100vh;
     display: flex;
