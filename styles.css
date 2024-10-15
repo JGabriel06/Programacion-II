@@ -4,6 +4,7 @@ body {
     background: linear-gradient(to bottom right, #f7fafc, #e2e8f0);
     color: #4a5568;
 }
+
 .container {
     min-height: 100vh;
     display: flex;
@@ -178,7 +179,6 @@ body {
     font-size: 0.9rem;
     margin: 0.5rem 0;
 }
-
 .icons {
     display: flex;
     justify-content: center;
@@ -190,3 +190,4 @@ body {
     width: 30px;
     height: 30px;
 }
+
