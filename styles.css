@@ -1,0 +1,193 @@
+/* Estilos Generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #f7fafc, #e2e8f0);
+    color: #4a5568;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Encabezado */
+.header {
+    background: linear-gradient(to right, #ff6f61, #ff4f40);
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.header-inner img {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Estilos del Contenido Principal */
+.main {
+    flex-grow: 1;
+    padding: 3rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos del Título Principal */
+.title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #c53030;
+    position: relative;
+}
+
+.underline {
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8rem;
+    height: 0.25rem;
+    background: #c53030;
+    opacity: 0.5;
+}
+
+/* Estilos de la Rejilla de Tarjetas */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Estilos de la Tarjeta */
+.card {
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.content {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+/* Efecto de giro en los íconos */
+.icon {
+    background-color: #c53030;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 1rem auto;
+    transition: transform 0.6s ease;
+}
+
+.card:hover .icon {
+    transform: rotate(360deg); /* Efecto de giro de 360 grados */
+}
+
+.icon-img {
+    width: 40px;
+    height: 40px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #7b1f24;
+}
+
+.description {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Estilos para el texto "Explorar más" */
+.explore {
+    background-color: #ff6f61;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.card:hover .explore {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Estilo para evitar la superposición */
+.card .content {
+    padding-bottom: 2.5rem;
+}
+
+/* Estilos del Pie de Página */
+.footer {
+    background-color: #2d3748;
+    color: white;
+    padding: 2rem 1rem;
+}
+
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-text {
+    margin: 0;
+}
+
+.footer-small {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.icon-img {
+    width: 30px;
+    height: 30px;
+}
