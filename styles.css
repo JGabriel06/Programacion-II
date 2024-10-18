@@ -179,6 +179,7 @@ body {
     font-size: 0.9rem;
     margin: 0.5rem 0;
 }
+
 .icons {
     display: flex;
     justify-content: center;
@@ -191,3 +192,84 @@ body {
     height: 30px;
 }
 
+/* Ajuste del tamaño del título */
+.title {
+    text-align: center;
+    font-size: 2rem; /* Tamaño reducido */
+    margin-bottom: 1.5rem;
+    color: #c53030;
+    position: relative;
+}
+
+.underline {
+    position: absolute;
+    bottom: -0.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5rem;
+    height: 0.2rem;
+    background: #c53030;
+    opacity: 0.5;
+}
+
+/* Estilos para la imagen, más pequeña */
+.image-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.promo-image {
+    max-width: 50%; /* Imagen más pequeña */
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.promo-image:hover {
+    transform: scale(1.05);
+}
+
+/* Sección de programas */
+.program-card {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #4a5568;
+}
+
+ul.program-list, ul.taller-list {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #4a5568;
+}
+
+/* Botón */
+.btn {
+    display: inline-block;
+    background-color: #ff6f61;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background-color: #c53030;
+}
+
+/* Otros ajustes */
+.cultura-intro, .program, .talleres {
+    margin-bottom: 2rem;
+}
