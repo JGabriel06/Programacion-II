@@ -273,3 +273,82 @@ ul.program-list, ul.taller-list {
 .cultura-intro, .program, .talleres {
     margin-bottom: 2rem;
 }
+
+/* Sección de programas */
+.section-title-sub {
+    cursor: pointer;
+    color: #d9534f;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+.content-sub{
+    display: none;
+    background-color: #f5f5f5;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Tabla de horarios */
+.contacto {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    align-items: center; /* Centra todos los elementos dentro de la sección */
+}
+
+table {
+    width: 80%; /* Ajusta el ancho de la tabla al 80% */
+    max-width: 800px; /* Establece un ancho máximo para la tabla */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+th {
+    background-color: #c53030;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+}
+
+td {
+    background-color: white;
+}
+
+td:hover {
+    background-color: #f8f8f8;
+}
+
+/* Opcional: Estilos para la sección de correos */
+.contact-emails {
+    width: 80%; /* Ajusta el ancho de la sección de correos */
+    max-width: 800px; /* Ancho máximo */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+.contact-emails h5 {
+    margin-top: 10px; /* Espaciado superior para los encabezados */
+    color:  #4a5568;
+}
+
+.contact-emails ul {
+    padding-left: 20px; /* Espaciado para la lista */
+}
+
+.contact-emails li {
+    margin-bottom: 0.5rem;
+}
+
+.contact-emails a {
+    color: #d9534f;
+    text-decoration: none;
+}
+
+.contact-emails a:hover {
+    text-decoration: underline;
+}
