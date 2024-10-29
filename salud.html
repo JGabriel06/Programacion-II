@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienestar Universitario - Área de Salud</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            content.style.display = content.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" target="_blank">
+                <img src="Unilibre-bogota.png" alt="Logo Universidad Libre" class="logo">
+            </a>
+        </div>
+    </header>
+
+    <main class="main">
+        <h2 class="title">
+            <span>Bienestar Universitario - Área de Salud</span>
+            <span class="underline"></span>
+        </h2>
+        <div class="image-container">
+            <img src="bienestar-area-salud.jpg" alt="area de salud" class="promo-image">
+        </div>
+
+        <section class="desarrollo-intro">
+            <h3>Objetivo</h3>
+            <p>Acceder a los programas de promoción y prevención que brinda el servicio. Esto con el fin de lograr mejores condiciones ambientales, físicas y psíquicas para los miembros de la comunidad universitaria.</p>
+        </section>
+
+        <section class="subprogramas">
+            <h3 class="section-title-sub" onclick="toggleContent('medicina-salud')">Medicina y Salud</h3>
+            <div id="medicina-salud" class="content-sub">
+                <p><strong>Objetivo:</strong> Brindar atención médica a los integrantes de la comunidad de manera oportuna, acorde con los protocolos documentados.</p>
+                <p>Para la consulta de medicina general se cuenta con un grupo de profesionales dispuestos a brindar una atención oportuna y de calidad a nuestros usuarios en cada campus. Las auxiliares de enfermería apoyan la labor, de acuerdo con las directrices dadas por el profesional. Para la atención no se requiere la presentación de carné ni agendar cita previa.</p>
+                <p>Finalizada la atención, agradecemos diligenciar la encuesta de satisfacción del servicio y depositarla en el buzón.</p>
+                <p>El servicio médico NO da incapacidades, solamente realiza el proceso de validación. Usted tiene 72 horas después de emitida la incapacidad por la EPS, para solicitar validación.</p>
+                <p>La auxiliar de enfermería, NO está autorizada a suministrar ningún tipo de medicación sin prescripción médica.</p>
+                <p>Los siguientes procedimientos no se realizan en nuestro servicio:</p>
+                <ul>
+                    <li>Curación de heridas contaminadas</li>
+                    <li>Canalización de vena</li>
+                    <li>Administración de medicamentos vía intravenosa</li>
+                    <li>Suturas</li>
+                    <li>Extracción de uñas</li>
+                </ul>
+                <p>NO se entrega medicación de anticoncepción, NO se aplican inyecciones.</p>
+            </div>
+
+            <h3 class="section-title-sub" onclick="toggleContent('cuidando-salud')">Cuidando la Salud</h3>
+            <div id="cuidando-salud" class="content-sub">
+                <p><strong>Objetivo:</strong> Fortalecer el autocuidado de la salud mental y física, y generar espacios de formación en hábitos y estilos de vida saludable, aspectos fundamentales para disfrutar la vida.</p>
+                <p><strong>Campañas de promoción y prevención:</strong> A través de diversas estrategias lúdicas e informativas se desarrollan acciones de promoción y prevención, las cuales se desarrollan con el apoyo de los profesionales y laboratorios.</p>
+                <p><strong>Semanas de la Salud:</strong> Se llevan a cabo la tercera semana de abril y de septiembre; en ellas se desarrollan campañas de donación de sangre, nutrición, toma de tensión arterial, salud visual, autoexamen y terapias de relajación, entre otras.</p>
+                <p><strong>Club Saludable:</strong> Club creado para orientar y realizar seguimiento periódico a los integrantes de la comunidad que presentan problemas de hipertensión y/o azúcar.</p>
+                <p><strong>Boletines ‘Notas de Salud’:</strong> En ellos encontrará temas de interés relacionados con la promoción y el autocuidado de la salud. Tenga en cuenta las recomendaciones de los profesionales y recuerde que “Prevenir es mejor que curar”.</p>
+                <p><strong>Asesorías de planificación familiar "Tienes derecho a elegir":</strong> A través de asesorías personalizadas se brinda orientación sobre métodos de planificación familiar, higiene femenina, prevención de cáncer de seno. En los servicios médicos no se maneja medicación de planificación familiar.</p>
+                <a href="https://www.unilibre.edu.co/bogota/ul/noticias/noticias-universitarias/2131-bienestar-universitario-boletines-de-salud" target="_blank" class="btn">ACCEDE AQUÍ A LOS BOLETINES DE SALUD</a> 
+            </div>
+
+            <h3 class="section-title-sub" onclick="toggleContent('hermosa-espera')">Una Hermosa Espera</h3>
+            <div id="hermosa-espera" class="content-sub">
+                <p>Programa que brinda una orientación a las integrantes de la comunidad universitaria que se encuentran en proceso de gestación. Esto se realiza a través de actividades dirigidas, con la finalidad de obtener el mejor grado de salud para ella y su hijo. De esta forma, se previenen riesgos durante el embarazo. Dicha orientación no sustituye los controles que debe realizarse la madre en la EPS.</p>
+            </div>
+        </section>
+
+        <section class="contacto">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sede</th>
+                        <th>Atención</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Candelaria</td>
+                        <td>Atención Médica</td>
+                        <td>Lunes a Viernes: 7:00 a.m. a 1:00 p.m. y 2:00 p.m. a 9:00 p.m.</td>
+                    </tr>
+                    <tr>
+                        <td>Atención Primaria de Enfermería</td>
+                        <td>Sábados: 8:00 a.m. a 5:00 p.m.</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Bosque Popular</td>
+                        <td>Atención Médica</td>
+                        <td>Lunes a Viernes: 7:00 a.m. a 9:00 p.m. Jornada continua</td>
+                    </tr>
+                    <tr>
+                        <td>Atención Primaria de Enfermería</td>
+                        <td>Sábados: 8:00 a.m. a 5:00 p.m.</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h4>Correos de contacto Médicos:</h4>
+            <div class="contact-emails">
+                <h5>Sede La Candelaria (Lunes a viernes)</h5>
+                <ul>
+                    <li><a href="mailto:wilton.duran@unilibre.edu.co">wilton.duran@unilibre.edu.co</a></li>
+                    <li><a href="mailto:nilson.rondon@unilibre.edu.co">nilson.rondon@unilibre.edu.co</a></li>
+                </ul>
+                <h5>Sábado</h5>
+                <ul>
+                    <li><a href="mailto:diego.becerra@unilibre.edu.co">diego.becerra@unilibre.edu.co</a></li>
+                </ul>
+                
+                <h5>Sede Bosque Popular (Lunes a viernes)</h5>
+                <ul>
+                    <li><a href="mailto:juan.bustos@unilibre.edu.co">juan.bustos@unilibre.edu.co</a></li>
+                    <li><a href="mailto:marco.lara@unilibre.edu.co">marco.lara@unilibre.edu.co</a></li>
+                </ul>
+                <h5>Sábado</h5>
+                <ul>
+                    <li><a href="mailto:oscar.juvinao@unilibre.edu.co">oscar.juvinao@unilibre.edu.co</a></li>
+                </ul>
+            </div>
+        </section>
+        
+        
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <p class="footer-text">&copy; 2023 Universidad Libre - Bienestar Universitario</p>
+            <p class="footer-small">Comprometidos con tu desarrollo integral</p>
+            <div class="icons">
+                <a href="cultura.html">
+                    <img src="book.svg" class="icon-img" alt="Libros">
+                </a>
+                <a href="recreacion_deporte.html">
+                    <img src="people-fill.svg" class="icon-img" alt="Personas">
+                </a>
+                <a href="deporte.html">
+                    <img src="activity.svg" class="icon-img" alt="Actividades">
+                </a>
+                <a href="salud.html">
+                    <img src="heart.svg" class="icon-img" alt="Salud">
+                </a>
+                <a href="socioeconomica.html">
+                    <img src="trending.svg" class="icon-img" alt="Tendencias">
+                </a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>
